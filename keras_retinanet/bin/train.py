@@ -226,7 +226,7 @@ def create_generators(args, preprocess_image):
     if args.random_transform:
         transform_generator = random_transform_generator(
             min_rotation=0,
-            max_rotation=5,
+            max_rotation=6.28,
             min_translation=(-0.2, -0.2),
             max_translation=(0.2, 0.2),
             min_shear=-0.2,
